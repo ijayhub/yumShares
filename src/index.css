@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Pirata+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  
+}
+.shares{
+  @apply text-red-300
+}
+.heading-2, .yum{
+  font-family: 'Bonheur Royale', cursive;
+  @apply text-5xl font-extrabold text-red-700
+}
+.heading-span{
+  @apply text-yellow-500  
+}
+.heading-span1{
+  font-family: 'Pirata One', cursive;
+  @apply  lg:text-4xl font-extrabold text-center  pt-8 lg:pt-20 mb-8
+}
+
+.image{
+  width:450px;
+  height:350px;
+  @apply rounded-3xl rotate-45 w-48 lg:w-auto
+}
+  .imageContainer{
+    height: 100vh;
+    @apply flex flex-col bg-slate-300 p-8 text-center 
+  }
+  .yumImage{
+    @apply flex flex-col justify-center items-center pt-48
+  }
+  .input{
+    @apply border-b-2 border-indigo-500 p-1  outline-none
+  }
+  .btnSignUp{
+    width: 100%;
+    @apply bg-indigo-500 text-white p-1 rounded-xl
+  }
+  .btnSignUp2{
+    width: 100%;
+    @apply bg-red-500 text-white p-1 rounded-xl
+  }
+
+  .label{
+    font-family: 'Pirata One', cursive;
+    font-size: 16px;
+  }
+  .formContainer{
+    width: 70%;
+    @apply p-4 
+  }
+  ::placeholder{
+    
+    color:black;
+    font-family: 'Bonheur Royale', cursive;
+    @apply text-lg
+  }
+  
+/* ..........................signup lines...................... */
+.hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 90px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 90px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.hr-linesLogin{
+  position: relative;
+  max-width: 340px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.hr-linesLogin:before{
+  content:" ";
+  height: 2px;
+  width: 110px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hr-linesLogin:after{
+  content:" ";
+  height: 2px;
+  width: 110px;
+  background: red;
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+/* ...................Navbar................... */
+.yumShares{
+    font-family: 'Pirata One', cursive;
+    font-size: 20px;
+}
+/* .............about................... */
+.foodAbout{
+  background-image: url('./img/food3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.aboutContainer{
+  height: 100%;
+  width: 100%;
+  @apply max-w-5xl mx-auto
+}
+.headingAbout{
+  font-family: 'Pirata One', cursive;
+  letter-spacing: 1.5px;
+  @apply text-center text-2xl lg:text-5xl pt-10 
+}
+.smallPara{
+  font-family: 'Bonheur Royale', cursive;
+  @apply text-center text-white lg:text-2xl
+}
+.paraAbout{
+  @apply font-bold  leading-loose text-lg text-justify
+}
+/* ..................................homepage..................................... */
+.homepage{
+  background-image: url('./img/yumShare-cover-page.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+.homepageOverlay{
+  display:flex;
+  flex-direction: column;
+
+
+  background-color: rgba(0, 0, 0, 0.5);
+  height:100vh;
+}
+.homepageTitle{
+  font-family: 'Bonheur Royale', cursive;
+  @apply lg:text-7xl text-red-700 font-bold
+  
+}
+.buttonnHomepage{
+    font-family: 'Pirata One', cursive;
+    @apply bg-red-700 text-white mr-4 p-1 lg:p-3 rounded-2xl
+}
+.buttonnHomepage2{
+    font-family: 'Pirata One', cursive;
+  
+    @apply bg-red-700 text-white mr-4 p-1 lg:p-3 
+}
+.paraHomepage{
+  font-family: 'Pirata One', cursive;
+  @apply text-white lg:text-5xl text-center flex items-center
+}
+
+/* ....................Landingpage..................... */
+.hero{
+  background-image: url('./img/pic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+}
+.overlay{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  background-color: rgba(0, 0, 0, 0.3);
+  height:300px;
+  @apply text-white;
+}
+.headingLand{
+  font-family: 'Bonheur Royale', cursive;
+  @apply text-4xl lg:text-7xl font-bold  hover:text-indigo-500
+
+}
+.inputHome{
+  width: 60%;
+  @apply flex justify-center items-center p-2 rounded-lg text-black border-none outline-none
+}
+.btnContainer{
+  position: relative;
+}
+.btnContainer1{
+  font-family: 'Pirata One', cursive;
+  position: absolute;
+  right:10px;
+  top:-15px;
+  @apply bg-red-700 p-1 rounded-lg text-white
+}
+
+
+
+/* ............................footer............................ */
+.footerLink, .footerPara{
+    font-family: 'Pirata One', cursive;
+    @apply lg:text-lg text-white flex 
+}
+
+.footerInput{
+  @apply p-1 lg:p-2  lg:rounded-l-lg border-none outline-none
+}
+.footerBtn{
+  font-family: 'Pirata One', cursive;
+  @apply bg-red-500 text-white p-1 lg:p-2  lg:rounded-r-lg mt-4 lg:mt-0
+}
+
+.footerTerms{
+  font-family: 'Pirata One', cursive;
+  @apply  lg:flex items-center justify-between px-3 text-white
+}
+.footerText{
+    font-family: 'Pirata One', cursive;
+}
+/* ......................................spoonacular API....................... */
+.dataContainer{
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8 my-10 max-w-5xl mx-auto px-4 lg:px-0
+
+}
+.titleDisplay{
+  font-family: 'Pirata One', cursive;
+  @apply text-center pt-3 text-lg font-bold text-red-700
+}
+.btnDisplay{
+  font-family: 'Pirata One', cursive;
+  @apply bg-black text-white p-2 mt-3 rounded-2xl
+}
+/* ..............................DisplayDetail......................... */
+  .d-container{
+    @apply grid grid-cols-1 md:grid-cols-2 px-5 lg:px-0
+  }
+  .detailContainer{
+    @apply  max-w-5xl mx-auto mt-20
+  }
+  .imgDetail{
+    width:100%;
+    height:300px;
+    @apply rounded-xl  pt-14
+  }
+  .details{
+    @apply lg:ml-10 pt-10 
+  }
+  .detailsTitle{
+    font-family: 'Pirata One', cursive;
+    @apply text-red-700 text-3xl text-center pt-8
+  }
+  .details-ingredient{
+    font-family: 'Pirata One', cursive;
+    @apply text-indigo-700 text-3xl text-center pb-2
+  }
+  .details-recipe{
+    @apply font-bold font-mono  text-center text-base
+  }
+  .details-cook{
+    font-family: 'Pirata One', cursive;
+    @apply text-indigo-700 text-3xl   py-5 text-center
+  }
+  .detail-text{
+    @apply text-justify leading-loose font-mono text-base
+  }
+  .detail-vid{
+    @apply flex justify-between items-center py-3
+  }
+  /* ..................form........................... */
+  .inputForm{
+    width: 100%;
+  
+    overflow: scroll;
+    text-overflow: ellipsis;
+    box-sizing:border-box;
+    @apply border-none p-2  outline-none resize-none rounded-md
+  }
+  .btnForm{
+    font-family: 'Pirata One', cursive;
+    width: 50%;
+    @apply bg-indigo-700 text-white p-1 rounded-lg 
+  }
+.formContainer, .recipeFormContent{
+    width: 70%;
+    margin:0 auto
+  }
+  .btnAddContainer{
+    @apply flex flex-col justify-center items-center pt-2 px-5 bg-indigo-100
+  }
+  .btnAdd{
+      font-family: 'Pirata One', cursive;
+      width:15%;
+      @apply bg-black text-white rounded-lg p-1 
+  }
+
+  /* ................................addedRecipe................................. */
+  .addRecipeContainer{
+    height:100%;
+    @apply bg-slate-900 text-white  pt-20 pb-5 px-5 
+  }
+  .addRecipe{
+    font-family: 'Pirata One', cursive;
+    @apply  max-w-5xl mx-auto border-2 border-gray-500 rounded-md p-4 mb-12
+  }
+  .name{
+    @apply text-white p-2 text-base
+  }
+  .buyList, .instructions{
+    @apply text-slate-200 p-2 text-base
+  }
+  /* ......................animation................ */
+  .slide-in-bottom{animation:slide-in-bottom .5s cubic-bezier(.25,.46,.45,.94) both}
+  @keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+  
+  
+
+
+/* small screen(mobile view) */
+@media only screen and (max-width:600px){
+  .label, .error{
+    font-size: 12px;
+  }
+  .formContainer{
+    width: 100%;
+    height: 100%;
+    @apply pt-12
+  }
+  .imageContainer{
+    display:none;
+  }
+  .paraAbout{
+    font-size: 14px;
+    @apply p-5
+  }
+  .yum{
+    font-size: 16px;
+  }
+  .yumShares{
+    font-family: 'Pirata One', cursive;
+    font-size: 14px;
+  }
+  .inputHome{
+    width: 100%;
+    color:black;
+  }
+  .footerLink, .footerPara{
+    @apply flex justify-center items-center 
+  }
+  .footerPara{
+    @apply mt-4
+  }
+  .footerInput, .footerBtn{
+    @apply rounded-lg
+  }
+  .hr-lines:before{
+    width: 55px;
+  }
+  .hr-lines:after{
+    width: 55px;
+  }
+  .hr-linesLogin:before{
+    width: 65px;
+  }
+
+  .hr-linesLogin:after{
+    width: 65px;
+  }
+  .formContainer, .recipeFormContent{
+    width: 100%;
+    margin:0 auto
+  }
+  .btnForm{
+    width: 100%;
+  }
+  .btnAdd{
+    width:100%;
+  }
+}
