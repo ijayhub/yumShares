@@ -25,7 +25,7 @@ const Navbar = () => {
 					</li>
 					<li className='text-red-600 p-2 rounded-3xl mr-2 hover:bg-indigo-400'>
 						<a href='/about' className='yumShares'>
-							About Us
+							About
 						</a>
 					</li>
 					<li className='text-red-600 p-2 rounded-3xl mr-2 hover:bg-indigo-400'>
@@ -33,6 +33,7 @@ const Navbar = () => {
 							Create
 						</a>
 					</li>
+					
 				</ul>
 			</div>
 			<div className='flex items-center justify-end'>
