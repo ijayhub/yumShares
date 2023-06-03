@@ -1,22 +1,13 @@
-import { Navigate } from "react-router-dom";
-import { account } from "../appwrite/appwriteConfig";
+import { useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
-	// const sessionActive = account.getSession(sessionId: '[SESSIO')
-	// console.log(sessionActive)
-	// const session = localStorage.setItem('sessionId') = response.$id
-	// console.log(session)
-	console.log
-	const logOut = () => {
-		const promise = account.deleteSession('current')
-		promise.then(response => {
-			console.log(response)
-			
-		Navigate('/');
-		})
-		.then(err => {
-			console.log(err)
-		})
+	const navigate=useNavigate()
+	
+	const handleLogOut = () => {
+		console.log('current')
+		localStorage.removeItem('cookieFallback');
+		navigate('/')
 	}
   return (
 		<nav className='flex justify-around items-center text-white bg-black p-5'>
@@ -45,10 +36,10 @@ const Navbar = () => {
 				</ul>
 			</div>
 			<div className='flex items-center justify-end'>
-				<button className='bg-red-600 p-2 rounded-xl   hover:bg-indigo-400' onClick={logOut}>
-
-						Logout
-				
+				<button
+					className='bg-red-600 px-2 py-1 rounded-xl  hover:bg-indigo-400'
+					onClick={handleLogOut}>
+					Logout
 				</button>
 			</div>
 		</nav>

@@ -1,12 +1,10 @@
-
-
 import { Navigate, Outlet } from 'react-router-dom';
-import { account } from '../appwrite/appwriteConfig';
+
 
 
 const PrivateRoutes = () => {
 	
-	const isAuthenticated = account.get();
+	const isAuthenticated = localStorage.getItem('cookieFallback');
 	console.log(isAuthenticated);
 	return isAuthenticated ? <Outlet /> : <Navigate to='/' />;
 };
