@@ -21,7 +21,8 @@ const Signup = () => {
 			uuidv4(),
 			user.email,
 			user.password,
-			user.name
+			user.name,
+			user.confirm
 		);
 		promise
 			.then(function (response) {
@@ -63,6 +64,7 @@ const Signup = () => {
 							name='name'
 							required
 							className='input'
+							autoComplete='off'
 							onChange={(e) =>
 								setUser({
 									...user,
@@ -81,6 +83,7 @@ const Signup = () => {
 							name='email'
 							required
 							className='input'
+							autoComplete='off'
 							onChange={(e) =>
 								setUser({
 									...user,
@@ -98,6 +101,7 @@ const Signup = () => {
 							id='password'
 							name='password'
 							required
+							autoComplete='off'
 							className='input'
 							onChange={(e) =>
 								setUser({
@@ -115,6 +119,7 @@ const Signup = () => {
 							type='password'
 							id='confirm'
 							name='confirm'
+							autoComplete='off'
 							className='input'
 							required
 							onChange={(e) =>
@@ -142,13 +147,13 @@ const Signup = () => {
 							</span>
 						</p>
 					</div>
-					<h2 className='hr-lines'>Or continue with</h2>
+					<h2 className='hr-lines label'>Or continue with</h2>
 					<div className='flex justify-center flex-center'>
 						<button
 							type='submit'
 							onClick={googleAuth}
 							className='btnSignUp2  label'>
-							Google
+							Google Account
 						</button>
 					</div>
 				</form>

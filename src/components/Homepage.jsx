@@ -39,7 +39,7 @@ const Homepage = () => {
 						<h2 className='paraHomepage'>
 							<Typewriter
 								options={{
-									strings: ['Discover Delicious Recipes with YumShares'],
+									strings: ['Discover Delicious meals and Recipes with YumShares'],
 									autoStart: true,
 									loop: true,
 								}}

@@ -4,6 +4,7 @@ import { database } from '../appwrite/appwriteConfig';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { useNavigate } from 'react-router-dom';
+import { BsFillArrowUpSquareFill } from 'react-icons/bs';
 
 const RecipeForm = () => {
 	const navigate = useNavigate();
@@ -63,6 +64,7 @@ const RecipeForm = () => {
 						<input
 							type='text'
 							id='name'
+							autoComplete='off'
 							className='inputForm'
 							value={recipeName}
 							onChange={(e) => setRecipeName(e.target.value)}
@@ -76,6 +78,7 @@ const RecipeForm = () => {
 							id='description'
 							cols='10'
 							rows='5'
+							autoComplete='off'
 							className='inputForm'
 							value={recipeDescription}
 							onChange={(e) => setRecipeDescription(e.target.value)}
@@ -90,6 +93,7 @@ const RecipeForm = () => {
 							id='buyList'
 							cols='30'
 							rows='10'
+							autoComplete='off'
 							className='inputForm'
 							value={recipeBuyList}
 							onChange={(e) => setRecipeBuyList(e.target.value)}
@@ -103,6 +107,7 @@ const RecipeForm = () => {
 							id='instructions'
 							cols='30'
 							rows='12'
+							autoComplete='off'
 							className='inputForm'
 							value={recipeInstructions}
 							onChange={(e) => setRecipeInstructions(e.target.value)}
@@ -114,7 +119,13 @@ const RecipeForm = () => {
 						</button>
 					</div>
 				</form>
+				<a href='#'>
+					<div className='flex justify-end items-end p-4'>
+						<BsFillArrowUpSquareFill className='text-blue-900 text-2xl lg:text-3xl ' />
+					</div>
+				</a>
 			</div>
+
 			<Footer />
 		</>
 	);

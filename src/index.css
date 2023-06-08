@@ -73,7 +73,7 @@
 .hr-lines:before{
   content:" ";
   height: 2px;
-  width: 90px;
+  width: 100px;
   background: red;
   display: block;
   position: absolute;
@@ -84,7 +84,7 @@
 .hr-lines:after{
   content:" ";
   height: 2px;
-  width: 90px;
+  width: 100px;
   background: red;
   display: block;
   position: absolute;
@@ -101,7 +101,7 @@
 .hr-linesLogin:before{
   content:" ";
   height: 2px;
-  width: 110px;
+  width: 120px;
   background: red;
   display: block;
   position: absolute;
@@ -112,7 +112,7 @@
 .hr-linesLogin:after{
   content:" ";
   height: 2px;
-  width: 110px;
+  width: 120px;
   background: red;
   display: block;
   position: absolute;
@@ -224,9 +224,12 @@
 
 
 /* ............................footer............................ */
+.footerlink-para{
+  @apply lg:flex justify-between items-center
+}
 .footerLink, .footerPara{
     font-family: 'Pirata One', cursive;
-    @apply lg:text-lg text-white flex 
+    @apply lg:text-lg text-white flex items-center
 }
 
 .footerInput{
@@ -234,7 +237,7 @@
 }
 .footerBtn{
   font-family: 'Pirata One', cursive;
-  @apply bg-red-500 text-white p-1 lg:p-2  lg:rounded-r-lg mt-4 lg:mt-0
+  @apply bg-red-500 text-white p-1 lg:p-2  lg:rounded-r-lg mt-4 lg:mt-0 border-none outline-none
 }
 
 .footerTerms{
@@ -298,7 +301,7 @@
     width: 100%;
   
     overflow: scroll;
-    text-overflow: ellipsis;
+    
     box-sizing:border-box;
     @apply border-none p-2  outline-none resize-none rounded-md
   }
@@ -341,11 +344,34 @@
   
   
 
+/* tablet view */
+@media only screen and (max-width: 900px){
+  .hr-linesLogin:before,.hr-lines:before{
+    width: 71px;
+  }
+
+  .hr-linesLogin:after,.hr-lines:after{
+    width: 71px;
+  }
+  .label{
+    font-size: 11px;
+  }
+  .footerlink-para{
+    @apply flex justify-between items-center
+  }
+  .footerInput{
+    @apply rounded-l-lg
+  }
+  .footerBtn{
+    @apply rounded-r-lg
+  }
+}
+
 
 /* small screen(mobile view) */
 @media only screen and (max-width:600px){
-  .label, .error{
-    font-size: 12px;
+  .label{
+    font-size: 11px;
   }
   .formContainer{
     width: 100%;
@@ -370,27 +396,34 @@
     width: 100%;
     color:black;
   }
+  .footerlink-para{
+    @apply flex flex-col justify-between items-center
+  }
   .footerLink, .footerPara{
     @apply flex justify-center items-center 
   }
   .footerPara{
     @apply mt-4
   }
-  .footerInput, .footerBtn{
-    @apply rounded-lg
+  .footerInput{
+    @apply rounded-l-lg
   }
+  .footerBtn{
+    @apply rounded-r-lg
+  }
+  
   .hr-lines:before{
-    width: 55px;
+    width: 75px;
   }
   .hr-lines:after{
-    width: 55px;
+    width: 75px;
   }
   .hr-linesLogin:before{
-    width: 65px;
+    width: 90px;
   }
 
   .hr-linesLogin:after{
-    width: 65px;
+    width: 90px;
   }
   .formContainer, .recipeFormContent{
     width: 100%;

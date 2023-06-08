@@ -51,6 +51,7 @@ const Login = () => {
 							type='email'
 							id='email'
 							name='email'
+							autoComplete='off'
 							className='input'
 							value={user.email}
 							onChange={(e) => setUser({ ...user, email: e.target.value })}
@@ -64,6 +65,7 @@ const Login = () => {
 							type='password'
 							id='password'
 							name='password'
+							autoComplete='off'
 							className='input'
 							value={user.password}
 							onChange={(e) => setUser({ ...user, password: e.target.value })}
@@ -83,7 +85,7 @@ const Login = () => {
 							Forgot password
 						</a>
 					</div>
-					<h2 className='hr-linesLogin'>Or continue with</h2>
+					<h2 className='hr-linesLogin label'>Or continue with</h2>
 
 					<div className='flex justify-center flex-center mb-3'>
 						<button

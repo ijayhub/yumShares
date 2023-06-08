@@ -4,6 +4,7 @@ import Input from "./Input"
 import Navbar from "./Navbar"
 import Display from "./Display"
 import { ThreeDots } from "react-loader-spinner"
+import { BsFillArrowUpSquareFill } from "react-icons/bs"
 
 
 const LandingPage = () => {
@@ -59,6 +60,11 @@ const LandingPage = () => {
 							{error}
 						</div>
 					)}
+					<a href='#'>
+						<div className='flex justify-end items-end p-4 lg:p-8'>
+							<BsFillArrowUpSquareFill className='text-blue-900 text-2xl lg:text-3xl ' />
+						</div>
+					</a>
 					<Footer />
 				</section>
 			</div>

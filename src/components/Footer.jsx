@@ -7,13 +7,13 @@ const Footer = () => {
 		<>
 			<div className='bg-slate-700 p-10'>
 				<h2 className='yum'>yumShares</h2>
-				<div className='lg:flex justify-between items-center'>
+				<div className='footerlink-para'>
 					<div className='lg:flex'>
 						<a href='/home' className='mr-4 footerLink'>
 							Home
 						</a>
 						<a href='/about' className='mr-4 footerLink'>
-							About Us
+							About
             </a>
             <a href='/create' className='mr-4 footerLink'>
 							Create
@@ -31,8 +31,9 @@ const Footer = () => {
 								<input
 									type='email'
 									name='email'
+									autoComplete='off'
 									className='footerInput'
-									placeholder='Enter email...'
+									placeholder='Enter email addy...'
 								/>
 								<button type='submit' className='footerBtn'>
 									Subscribe

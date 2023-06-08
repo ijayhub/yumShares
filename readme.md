@@ -40,7 +40,7 @@ YumShares is a user-friendly website that enables users to share and discover re
 
 ## Overview
 
-* [Repo Codes]()
+* [Repo Codes](https://github.com/ijayhub/yumShares)
 
 * [Hosted Link]()
 
