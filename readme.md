@@ -2,7 +2,7 @@
 <div align="center">
   <h1>yumShares💖</h1>
 
-  <img src="" alt="project"/>
+  <img src="./src/img/yumShares.gif" alt="project"/>
   
 </div>
 <!-- TABLE OF CONTENTS -->
@@ -42,7 +42,7 @@ YumShares is a user-friendly website that enables users to share and discover re
 
 * [Repo Codes](https://github.com/ijayhub/yumShares)
 
-* [Hosted Link]()
+* [Hosted Link](https://yum-shares.vercel.app/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>

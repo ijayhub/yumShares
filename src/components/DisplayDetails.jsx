@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from './Navbar';
 import { ThreeDots } from 'react-loader-spinner';
-import Footer from './Footer';
 import { RWebShare } from 'react-web-share';
 import { BsShareFill } from 'react-icons/bs';
 
@@ -121,7 +120,7 @@ const DisplayDetails = () => {
 				</div>
 			)}
 
-			<Footer />
+		
 		</div>
 	);
 };
