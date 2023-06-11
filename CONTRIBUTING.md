@@ -1,7 +1,7 @@
 <div align="center">
   <h1>yumShares💖</h1>
 
-  <img src="" alt="project"/>
+  <img src="./src/img/yumShares.gif" alt="project"/>
     <p>Welcome to this project! I appreciate your interest. 
       please take a moment to read these contributing 
       guidelines. 
