@@ -117,8 +117,4 @@ const Login = () => {
 };
 
 
-// Login.propTypes = {
-// 	handleLogin: PropTypes.func.isRequired,
-// };
-
 export default Login;
