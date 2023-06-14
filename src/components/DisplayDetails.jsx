@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { ThreeDots } from 'react-loader-spinner';
 import { RWebShare } from 'react-web-share';
-import { BsFillArrowLeftSquareFill,  BsShareFill } from 'react-icons/bs';
+import { BsFillArrowRightSquareFill,  BsShareFill } from 'react-icons/bs';
 
 
 const DisplayDetails = () => {
@@ -120,9 +120,9 @@ const DisplayDetails = () => {
 					{error}
 				</div>
 			)}
-			<a href='#'>
-				<div className='flex justify-end items-end p-4 lg:p-8'>
-					<BsFillArrowLeftSquareFill className='text-blue-900 text-2xl lg:text-3xl ' />
+			<a href='/about'>
+				<div className='flex justify-end items-end p-4 lg:p-6'>
+					<BsFillArrowRightSquareFill className='text-blue-900 text-2xl lg:text-3xl ' />
 				</div>
 			</a>
 
