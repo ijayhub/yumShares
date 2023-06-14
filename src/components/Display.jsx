@@ -8,7 +8,7 @@ const Display = ({ meals }) => {
 
 	return (
 		<div className='dataContainer'>
-			{meals.slice(0, 3).map((meal) => (
+			{meals.slice(0, 6).map((meal) => (
 				<div
 					key={meal.idMeal}
 					className='shadow-2xl p-4 rounded-2xl hover:bg-indigo-300'>
